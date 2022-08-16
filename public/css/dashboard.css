@@ -1,0 +1,132 @@
+.dashboard {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+}
+
+.dashboard .dashboard-menu {
+    max-width: 270px;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-banner);
+    border-right: 2px solid var(--bg-nav);
+}
+
+.dashboard 
+.dashboard-menu 
+.dashboard-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0.8rem 0.6rem;
+}
+
+.dashboard .dashboard-menu .dashboard-menu__container .top-menu {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.dashboard 
+.dashboard-menu 
+.dashboard-menu__container 
+.dashboard-menu__container__logo {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.dashboard .dashboard-menu .dashboard-menu__container .dashboard-menu__container__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard .dashboard-menu .dashboard-menu__container .dashboard-menu__container__menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .dashboard-menu .dashboard-menu__container .dashboard-menu__container__menu ul li {
+    padding: 0.8rem 0.6rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.dashboard .dashboard-menu .dashboard-menu__container .dashboard-menu__container__menu ul li:hover {
+    background-color: var(--bg-nav);
+}
+
+/* Contenedor del formulario */
+.dashboard .content-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    background-color: var(--bg-banner);
+}
+
+.section-title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #9fa7a7;
+    padding: 0px 8px;
+    border-left: 2px solid #9fa7a7;
+}
+
+.dashboard input, textarea, select, button {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+    color: var(--bg-color);
+    background-color: var(--bg-nav);
+}
+
+.dashboard textarea {
+    min-height: 200px;
+    max-height: 220px;
+    height: 100%;
+    resize: none;
+}
+
+.form-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-buttom, .dashboard .form-control button[type="submit"] {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem 0.6rem;
+    border-radius: 0.4rem;
+    gap: 0.4rem;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+    color: var(--bg-color);
+    background-color: var(--bg-nav);
+    cursor: pointer;
+}

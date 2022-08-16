@@ -1,0 +1,18 @@
+# Configuraxion de la url 
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+# Configuraciones:
+Options All -Indexes
+Options +FollowSymLinks
+
+# No cache
+Header always set Cache-Control "no-cache, no-store, must-revalidate"
+Header always set Pragma "no-cache"
+Header always set Expires "0"
+
+# Urls amigables:
+# RewriteEngine On
+# RewriteRule ^([a-zA-Z0-9/-]+)$ index.php?route=$1
