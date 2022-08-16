@@ -24,6 +24,9 @@
     <!-- Preloader -->
     <?php Render::module('loader-module'); ?>
 
+    <!-- Content -->
+    <?php Render::module('wellcome-message-module'); ?>
+
     <!-- Scripts -->
     <script src="<?php URL::url_for('js', 'main.js'); ?>"></script>
     

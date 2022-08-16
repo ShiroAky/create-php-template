@@ -1,5 +1,5 @@
-<div class="loader">
+<div class="loader" id="loader">
 
-    <h1>Shiro php template</h1>
+    <div class="custom-loader"></div>
 
 </div>
