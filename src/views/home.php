@@ -21,6 +21,8 @@
 </head>
 <body>
 
+    <h1>Shiro php template</h1>
+
     <!-- Scripts -->
     <script src="<?php URL::url_for('js', 'main.js'); ?>"></script>
     
