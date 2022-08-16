@@ -2,13 +2,12 @@
 :root {
 
     /* Backgrounds: */
-    --background-color-554d4d: linear-gradient(to top, #2A2020 0%, gray 100%);
     --background-color-242a38: #242a38;
     --background-color-2e2f41: #2e2f41;
-    --background-color-554d4d-dark: #2A2020;
-    --background-color-554d4d-light: gray;
     --background-color-white: #ffffff;
     --background-color-1c2a3c: #1c263c;
+    --background-color-171923: #171923;
+    --background-color-12141D: #12141D;
 
     /* Colors */
     --color-white: #fff;
@@ -104,71 +103,10 @@
 
 /* Body */
 body {
-    background-color: var(--background-color-242a38);
+    background-color: var(--background-color-12141D);
 }
 
-/* Navbar */
-.navbar {
-    width: var(--general-size-adaptive-container);
-    background-color: var(--background-color-2e2f41);
-    display: var(--general-display-flex);
-    align-items: var(--general-flex-align-center);
-    align-content: var(--general-flex-align-center);
-    justify-content: var(--general-flex-space-between);
-    padding: var(--general-padding-10-15);
-    color: var(--color-translucen-white);
-    box-shadow: var(--general-shadow) 0px 0px 5px 0px;
-}
 
-.navbar
-.navbar__logo {
-    width: var(--general-size-logo-140);
-}
-
-.navbar 
-.navbar__logo
-img {
-    width: var(--general-size-receptive-container);
-}
-
-.navbar
-.navbar__list {
-    display: var(--general-display-flex);
-    align-items: var(--general-flex-align-center);
-    align-content: var(--general-flex-align-center);
-    gap: var(--general-gap-10);
-}
-
-.navbar 
-.navbar__search {
-    width: var(--general-size-search-320);
-    position: relative;
-    display: var(--general-display-flex);
-    align-items: var(--general-flex-align-center);
-    align-content: var(--general-flex-align-center);
-}
-
-.navbar 
-.navbar__search
-input[type="text"] {
-    width: var(--general-size-receptive-container);
-    border-radius: var(--general-radius-25);
-    color: var(--color-translucen-white);
-    padding: var(--general-padding-10-15);
-    background-color: var(--background-color-242a38);
-}
-
-.navbar 
-.navbar__search
-.icon {
-    position: absolute;
-    right: 15px;
-    cursor: pointer;
-    color: var(--color-white);
-    font-size: var(--general-font-size-20);
-    padding: 0px var(--general-padding-icon-10);
-    background-color: var(--background-color-242a38);
-}
 
 /* Loader */
 .loader {
