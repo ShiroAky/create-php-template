@@ -2,12 +2,12 @@
 
 require_once './src/app/Router.php';
 require_once './src/app/Render.php';
-require_once './src/controllers/User.php';
+require_once './src/models/User.php';
 
 // Uso de namespaces:
 use App\Router;
 use App\Render;
-use Controllers\User;
+use Models\User;
 
 /**
  * En este archivo se definen las rutas de la aplicación.

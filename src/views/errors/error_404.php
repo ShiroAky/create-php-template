@@ -1,8 +1,6 @@
-<?php require_once './src/app/Render.php'; ?>
 <?php require_once './src/controllers/URL.php'; ?>
 
-<?php use Proyect\Anime\App\Render; ?>
-<?php use Proyect\Anime\Controllers\URL; ?>
+<?php use Controllers\URL; ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -12,15 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404 - No encontrado</title>
     <!-- Styles css -->
-    <link rel="stylesheet" href="<?php URL::for('css', 'normalize.css'); ?>">
-    <link rel="stylesheet" href="<?php URL::for('css', 'general.css'); ?>">
+    <link rel="stylesheet" href="<?php URL::url_for('css', 'normalize.css'); ?>">
+    <link rel="stylesheet" href="<?php URL::url_for('css', 'general.css'); ?>">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?php URL::for('img', 'logo.svg'); ?>" type="image/svg">
+    <link rel="shortcut icon" href="<?php URL::url_for('img', 'logo.svg'); ?>" type="image/svg">
 </head>
 <body>
-
-    <!-- Loader -->
-    <?php Render::module('loader'); ?>
     
     <!-- Contenedor de la pagina de error -->
     <div class="error-content">
@@ -37,7 +32,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="<?php URL::for('js', 'main.js'); ?>"></script>
+    <script src="<?php URL::url_for('js', 'main.js'); ?>"></script>
     
 </body>
 </html>

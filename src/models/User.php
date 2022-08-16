@@ -1,7 +1,7 @@
 <?php
 
     // Crear el namespace:
-    namespace Controllers;
+    namespace Models;
 
     require_once './src/database/db.php';
     require_once './src/controllers/URL.php';

@@ -21,12 +21,6 @@
 </head>
 <body>
 
-    <!-- Loader -->
-    <?php Render::module('loader'); ?>
-
-    <!-- Navbar -->
-    <?php Render::module('nav'); ?>
-
     <!-- Scripts -->
     <script src="<?php URL::url_for('js', 'main.js'); ?>"></script>
     
