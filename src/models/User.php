@@ -47,8 +47,8 @@
         public static function login(string $email, string $password)
         {
 
-            // $email = Utils::encryptData($email);
-            // $password = Utils::encryptData($password);
+            $email = Utils::encryptData($email);
+            $password = Utils::encryptData($password);
 
             // Crear la consulta:
             $query = "SELECT * FROM `users` WHERE `correo` = '$email' AND `contraseña` = '$password' LIMIT 1;";
@@ -124,22 +124,10 @@
                 $role = $_SESSION['user_role'];
                 $role = ($role == 'Admin') ? $role = 'dashboard/' : $role = '';
 
-                // Validar el tipo:
-                if ($type == 'nav') {
-                    echo '<li><a href="' . URL::get() . $role . '"><i class="icon ion-md-person"></i> ' . $_SESSION['user'] . '</a></li>';
-                    echo '<li><a href="' . URL::get() . 'logout' . '"><i class="icon ion-md-log-out"></i> Cerrar sesión</a></li>';
-                }
-
                 // Retornar true:
                 return true;
 
             } else {
-                    
-                // Validar el tipo:
-                if ($type == 'nav' && !isset($_SESSION['user']) && empty($_SESSION['user'])) {
-                    echo '<li><a href="' . URL::get() . "login" . '"><i class="icon ion-md-person"></i> Login</a></li>';
-                    echo '<li><a href="' . URL::get() . "sinup" . '"><i class="icon ion-md-person-add"></i> Registro</a></li>';
-                }
 
                 // Devolver false:
                 return false;
