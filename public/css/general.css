@@ -106,7 +106,33 @@ body {
     background-color: var(--background-color-12141D);
 }
 
+/* Wellcome */
+.wellcome {
+    width: var(--general-size-adaptive-container);
+    height: var(--general-size-adaptive-container-height);
+    display: var(--general-display-flex);
+    flex-direction: column;
+    gap: var(--general-gap-30);
+    padding: var(--general-padding-20-30);
+    text-align: var(--general-flex-align-center);
+    align-items: var(--general-flex-align-center);
+    align-content: var(--general-flex-align-center);
+    justify-content: var(--general-flex-align-center);
+}
 
+.wellcome
+.wellcome__message {
+    font-size: var(--general-font-size-35);
+    font-weight: var(--general-size-ordinal-380);
+}
+
+/* Code */
+.code {
+    background-color: var(--background-color-1c2a3c);
+    padding: var(--general-padding-10-15);
+    font-size: var(--general-font-size-24);
+    color: var(--color-green);
+}
 
 /* Loader */
 .loader {
@@ -136,6 +162,7 @@ body {
     animation: s9 2s infinite linear;
 }
 
+.loader
 .custom-loader::before,
 .custom-loader::after {    
     content: "";
@@ -146,7 +173,8 @@ body {
     background-size: 100% 10px,10px 100%;
     background-repeat: no-repeat;
 }
-  
+
+.loader
 .custom-loader::after {
     transform: rotate(45deg);
 }
