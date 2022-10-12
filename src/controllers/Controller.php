@@ -3,10 +3,10 @@
     namespace App\Controllers;
 
     /**
-    * @package App\Controllers\Controller
+    * @package App\Controllers\Content
     */
 
-    class Controller
+    class Content
     {
 
         public static function index()
