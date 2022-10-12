@@ -11,7 +11,12 @@
 
         public static function index()
         {
-            echo 'Success';
+            
+        }
+        
+        public static function show()
+        {
+            
         }
 
     }
