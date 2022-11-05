@@ -14,6 +14,9 @@
         public static function index()
         {
             
+            // Do not delete contains page title settings:
+            $__META = ['title_content'];
+            
         }
         
         public static function show()
