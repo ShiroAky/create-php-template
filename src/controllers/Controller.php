@@ -6,6 +6,8 @@
     * @package App\Controllers\Content
     */
 
+    use App\Core\Render;
+
     class Content
     {
 
